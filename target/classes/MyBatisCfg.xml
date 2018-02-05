@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 指定数据库连接信息的位置 -->
+    <properties resource="db.properties"></properties>
+    
+    <!--com.dw.entity下的所有类定义别名 -->
+    <typeAliases>
+        <package name="com.dw.entity"/>
+    </typeAliases>
+    
+    <mappers>
+        <!--注册BookMapper映射-->
+        <mapper resource="com/dw/mapper/BookMapper.xml" />
+    </mappers>
+</configuration>
